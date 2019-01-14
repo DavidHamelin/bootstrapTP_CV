@@ -1,0 +1,170 @@
+﻿
+/* TAILLE DE LA PAGE */
+body {
+    background: linear-gradient(to right,black,#ad743a); /*Dégradé linéaire vers la droite du noir au marron*/
+    width: 100%;
+    height: 100%;
+}
+/* NAVBAR */
+/* CORPS */
+/*Titres centrés*/
+h3 {
+    text-align: center;
+    padding: 10% 5% 5% 5%;
+}
+h2 {
+    text-align: center;
+}
+/* Dates en gras */
+em
+{
+    font-weight: bold;
+    font-style: normal;
+}
+/*Pas de puces aux listes*/
+ul {
+    list-style-type: none;
+}
+/*ANIMATIONS*/
+/*Transition LOGO (Nom)*/
+.navbar-brand {
+    font-weight: bold;
+    transition: transform 1s;
+}
+
+    .navbar-brand:hover {
+        transform: translate(0, -10px);
+    }
+/*Transitions Menu déroulant dans NAVBAR*/
+.dropdown-item {
+    transition-property: font-size;
+    transition-duration: 0.5s;
+}
+
+    .dropdown-item:hover {
+        font-size: 1.1em;
+    }
+/*Transitions cercles de présentation */
+.col-lg-4 {
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+    .col-lg-4:hover {
+        transform: scale(1.2)
+    }
+/* DESIGN CENTRE */
+/*Contient les cercles de présentation rapide*/
+#circlesResume {
+    display: flex;
+    margin: 5% 10% 10% 10%;
+    justify-content: center;
+    align-items: center;
+}
+/*La ligne contenant les 3 cercles de présentation*/
+.row {
+    color: white;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    align-items: flex-end;
+}
+section {
+    display: flex;
+    margin: auto;
+    color: white;
+}
+article {
+    display: flex;
+    margin: auto;
+    padding: 5% 10%;
+    background: black;
+    /*#c6ac7f*/
+}
+aside {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+aside ul
+{
+    text-align: left;
+}
+/* PROGRESS BAR */
+.progress {
+    height: 1%;
+    width: 30%;
+    margin-top: 6px;
+    margin-left: 1%;
+}
+
+.listFlex {
+    display: flex;
+    justify-content: space-between;
+}
+/* FOOTER */
+footer
+{
+    color: white;
+}
+address {
+    margin-left: 5%;
+}
+footer h3
+{
+    
+    padding-top: 2%;
+    padding-bottom: 0;
+}
+/*Liens HAUT DE PAGE (1 large screen / 1 mobiles)*/
+#pageUp {
+    background: white;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 5px;
+    padding: 0px 7px 3px 6px;
+}
+
+#up {
+    position: fixed;
+    bottom: 7%;
+    right: 2%;
+    background: white;
+    border-radius: 5px;
+    padding: 0px 7px 3px 6px;
+    display: none;
+}
+/* PETITES RESOLUTIONS */
+@media all and (max-width: 800px) {
+    /* Retire transition titre */
+    .navbar-brand
+    {
+        transition: none;
+    }
+    .navbar-brand:hover
+    {
+        transform: none;
+    }
+    /* Réduit les images des cercles de présentation */
+    .row img {
+        transform: scale(0.6);
+    }
+    /* Remplace "Haut de la page" par "Haut" */
+    #pageUp {
+        display: none;
+    }
+    #up {
+        display: block;
+    }
+    /* Stoppe les transitions des cercles de présentation*/
+    .col-lg-4 {
+        transition: none;   
+    }
+    .col-lg-4:hover 
+    {
+        transform: none;
+    }
+}

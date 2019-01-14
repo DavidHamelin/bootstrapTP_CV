@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <!--<link href="Content/bootstrap.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <title>CV David HAMELIN (TP Bootstrap)</title>
+</head>
+<body>
+    <div id="mainWrap">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <img src="https://img.icons8.com/color/48/000000/edvard-munch.png" alt="Le cri d'Edward Munch" title="Le cri d'Edward Munch" />
+            <a class="navbar-brand" href="#">D. Hamelin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!--Lien vers Page d'accueil-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--Menu déroulant "Mon CV"-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mon CV
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#skills">Compétences</a>
+                            <a class="dropdown-item" href="#school">Formations</a>
+                            <a class="dropdown-item" href="#jobs">Expériences</a>
+                            <a class="dropdown-item" href="#care">Bénévolat</a>
+                            <a class="dropdown-item" href="#hobbies">Centres d'intérêts</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/david-hamelin-7a0086a0" target="_blank">Mon Profil Linked<img src="https://img.icons8.com/color/48/000000/linkedin.png" /></a>
+                        </div>
+                    </li>
+                    <!--Lien vers Book-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://drhamwebdesign.tumblr.com/" target="_blank" title="Aller vers Tumblr">Mon Book (Tumblr)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--JUMBOTRON
+        <div class="jumbotron">-->
+        <!--Nom et Prénom
+        <h1 class="display-4">David Hamelin</h1>-->
+        <!--Citation
+            <blockquote class="blockquote mb-0">
+                <p>"Qui contrôle le passé contrôle l'avenir."</p>
+                <p class="blockquote-footer">Aldous Huxley dans<cite title="Source Title"> Le Meilleur des Mondes (1931)</cite></p>
+            </blockquote>
+        </div>-->
+        <div id="allContent">
+            <!--3 cercles présentation rapide-->
+            <div id="circlesResume">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Tesla_Sarony.jpg/200px-Tesla_Sarony.jpg" alt="Nikola Tesla" width="180" height="245">
+                        <h2>A propos de moi</h2>
+                        <p>POEC Concepteur - Développeur .NET | En recherche d'alternance : Développeur Web</p>
+                        <p><a class="btn btn-light" href="#aboutMe" role="button">Détails &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="https://forum.tontonvelo.com/download/file.php?id=126507" alt="Generic placeholder image" width="250" height="200">
+                        <h2>Parcours</h2>
+                        <p>Graphisme, Web Design, Développement front-end / back-end : tout m'intéresse !</p>
+                        <p><a class="btn btn-light" href="#career" role="button">Voir mon parcours &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="rounded-circle position-fixed-0" src="http://boomerpower.info/wp-content/uploads/2018/10/classic-vintage-telephone-pocket-address-book-telephone-fixe-retro-genial-amazon-telephone-fixe-de-amazon-telephone-fixe.jpg" alt="Ancien téléphone" width="245" height="245">
+                        <h2>Contact</h2>
+                        <p>N'hésitez pas à me contacter --> Je suis disponible à partir d'avril 2019</p>
+                        <p><a class="btn btn-light" href="#contactMe" role="button">Mes coordonnées &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--Contenu du CV-->
+            <section>
+                <!--Rubrique A propos-->
+                <article id="aboutMe">
+                    <h2>A propos de moi : </h2>
+                    <h3>POEC Concepteur - Développeur .NET | En recherche d'alternance : Développeur Web</h3>
+                    <p>
+                        Je recherche un contrat de professionnalisation en Développement Web sur Le Havre et alentours à partir de mai 2019.
+                        Ceci afin de valider un Titre professionnel "Développeur web et web mobile" (RNCP 31114 niveau 3).
+                    </p>
+                    <p>
+                        * * * Je suis actuellement en POEC (Préparation Opérationnelle à l'Emploi Collective) Concepteur - Développeur .NET * * *
+                    </p>
+                    <p>
+                        Autodidacte, j'ai appris entre autres les langages HTML5 et CSS3 via <a href="https://openclassrooms.com" target="_blank" title="openclassrooms.com">OpenClassrooms.com</a>. <br />
+                        D'autre part, mes études aux Beaux Arts de Rouen m'ont apporté des compétences en design graphique.
+                        Je maitrise et utilise régulièrement la suite Adobe (Photoshop, Illustrator, InDesign, Premiere).
+                    </p>
+                </article>
+                <!--Rubrique Parcours-->
+                <article id="career">
+                    <h2>Mon parcours</h2>
+                    <aside id="skills">
+                        <h3>Compétences</h3>
+                        <p class="h5">Langues :</p>
+                        <ul>
+                            <li><em>Anglais :</em> Avancé (BULATS niveau B2)</li>
+                            <li><em>Espagnol :</em> Intermédiaire</li>
+                        </ul>
+                        <p class="h5">Informatique</p>
+                        <ul>
+                            <li class="listFlex">
+                                <p><em>Suite Office :</em> Word, Excel, PowerPoint, Publisher</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                </div>
+                            </li>
+                            <li class="listFlex">
+                                <p><em>Adobe Creative Suite :</em> Photoshop, Illustrator, InDesign, Premiere</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                </div>
+                            </li>
+                            <li class="listFlex">
+                                <p><em>Téléphonie :</em> Hermes, Altitude μAgent Windows 7.5 (Easyphone)</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                </div>
+                            </li>
+                            <li class="listFlex">
+                                <p><em>Web :</em> HTML5 / CSS3, Wordpress, MailChimp</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </aside>
+                    <aside id="school">
+                        <h3>Formations</h3>
+                        <ul>
+                            <li><em>Actuellement</em> : POEC Concepteur - Développeur .NET à La Manu Le Havre</li>
+                            <li><em>2018</em> : Formation aux langages HTML / CSS et aux CMS (Wordpress) via OpenClassrooms.com</li>
+                            <li><em>2016</em> : Formation “Développer ses compétences Linguistiques Professionnelles” au CEPPIC de Mont Saint Aignan</li>
+                            <li>Obtention du BULATS (niveau B2)</li>
+                            <li><em>2012 - 2013</em> : Faculté de Musicologie de Mont Saint Aignan</li>
+                            <li><em>2009 - 2012</em> : École Supérieure d’Arts et Design Le Havre - Rouen (ESADHAR)</li>
+                            <li><em>2009</em> : Baccalauréat Littéraire Option Arts Plastiques</li>
+                        </ul>
+                    </aside>
+                    <aside id="jobs">
+                        <h3>Expériences</h3>
+                        <ul>
+                            <li><em>2017 :</em> Stage MONITEUR D’ATELIER, ADAPEI 27 (Val-de-Reuil)</li>
+                            <li>Management, accompagement d’une équipe de travailleurs en situation de handicap</li>
+                            <li><em>2016 - 2017 :</em> SERVEUR / MAÎTRE D’HÔTEL, Evénementiel (Le Mans, Normandie, Région Parisienne)</li>
+                            <li><em>2014 - 2016 :</em> BARMAN, Délirium Café / Bar des Fleurs (Rouen)</li>
+                            <li><em>2013 - 2014 :</em> TÉLÉCONSEILLER, Voxens (Rouen)</li>
+                        </ul>
+                    </aside>
+                    <aside id="care">
+                        <h3>Bénévolat</h3>
+                        <ul>
+                            <li><em>2012 - 2017 :</em> Membre de l’Association Rock Festival (Rouen)</li>
+                            <li>Organisation d’événements, montage scénique, sonorisation en intérieur/extérieur, gestion d’éclairage, régie, gestion des groupes, MAO, enregistrement studio, gardiennage, catering</li>
+                        </ul>
+                    </aside>
+                    <aside id="hobbies">
+                        <h3>Centres d'intérêts</h3>
+                        <p><em>Vélo / Arts / Musique / Culture / Gaming / Voyages</em></p>
+                    </aside>
+                </article>
+            </section>
+        </div>
+        <!--Fin div allContent-->
+        <!--Pied de page-->
+        <footer id="contactMe">
+            <h3>Contact</h3>
+            <a id="pageUp" href="#">Haut de la page</a>
+            <a id="up" href="#">Up</a>
+            <address>
+                <h4>La Manu</h4>
+                <p>
+                    2 rue Dombasle<br />
+                    76600 Le Havre<br />
+                    <a href="mailto:contact-lehavre@lamanu.fr">contact-lehavre@lamanu.fr</a> <!--"mailto:"permet d'envoyer un mail-->
+                </p>
+            </address>
+            <p class="text-center">&copy; 2019 - LaManu &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </div>
+    <!--Fin container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
